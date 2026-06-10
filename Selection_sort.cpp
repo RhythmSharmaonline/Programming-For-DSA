@@ -16,7 +16,9 @@ int main(){
                 min_index = j;
             }
         }
+        if (min_index!=i){
         swap(arr[i],arr[min_index]);
+        }
     }
     cout<< "Sorted Index: ";
     for (int i= 0 ;i<arr.size();i++){
