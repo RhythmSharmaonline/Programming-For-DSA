@@ -44,9 +44,9 @@ int multi(int n1, int n2){
 //Division
 float divi(int n1, int n2){
     if(n2 == 0){
-        cout << "Can't divide by 0";
+        cout << "Can't divide by 0\n";
     }
-    return float(n1/n2);
+    return static_cast<float>(n1/n2);
 }
 
 //MAIN Function
