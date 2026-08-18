@@ -44,34 +44,33 @@ int multi(int n1, int n2){
 //Division
 float divi(int n1, int n2){
     if(n2 == 0){
-        cout << "Can't divide by 0 ";
-        return 0;
+        cout << "Can't divide by 0";
     }
     return float(n1/n2);
 }
 
 //MAIN Function
 int main() {
-    int a,b ;
-    inp(a,b);
     while(true){
         int choice = welcome();
+        int a,b ;
+        inp(a,b);
         switch(choice){
             case 1:
-                cout<<"Result= "<< add(a,b);
+                cout<<"Result= "<< add(a,b)<<"\n\n";
                 break;
             case 2: 
-                cout<<"Result= "<< subs(a,b);
+                cout<<"Result= "<< subs(a,b)<<"\n\n";
                 break;
             case 3:
-                cout<<"Result= "<< multi(a,b);
+                cout<<"Result= "<< multi(a,b)<<"\n\n";
                 break;
             case 4:
-                cout<<"Result= "<< divi(a,b);
+                cout<<"Result= "<< divi(a,b)<<"\n\n";
                 break;
             case 5:
                 cout<<"-----Thank You For Using our Services----";
-                return 0;
+                break;
             default:
                 cout <<"Invalid Choice";
                 break;
