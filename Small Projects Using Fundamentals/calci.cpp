@@ -54,7 +54,7 @@ int main() {
     while(true){
         int choice = welcome();
         if(choice==5){
-            cout<<"<-----Thank You For Using our Services---->"<<"\n\n";
+            cout<<"\n<-----Thank You For Using our Services---->"<<"\n\n";
             break;
         }
         else if (choice<1||choice>5){
