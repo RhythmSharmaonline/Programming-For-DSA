@@ -53,6 +53,14 @@ float divi(int n1, int n2){
 int main() {
     while(true){
         int choice = welcome();
+        if(choice==5){
+            cout<<"<-----Thank You For Using our Services---->"<<"\n\n";
+            break;
+        }
+        else if (choice<1||choice>5){
+            cout<<"Invalid input";
+            continue;
+        }
         int a,b ;
         inp(a,b);
         switch(choice){
@@ -68,15 +76,9 @@ int main() {
             case 4:
                 cout<<"Result= "<< divi(a,b)<<"\n\n";
                 break;
-            case 5:
-                cout<<"-----Thank You For Using our Services----";
-                break;
-            default:
-                cout <<"Invalid Choice";
-                break;
-
-                
         }
+        
+        
 }
 
     return 0;
